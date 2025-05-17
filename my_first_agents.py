@@ -4,7 +4,7 @@ import playsound
 import glob
 
 def execute_agent(user_prompt, tools):
-  api_key = "AIzaSyAIOM_Lav2P6Ip1BgZ8IgryqDIDDF1QeNY"
+  api_key = "YOUR_GEMINI_API_KEY"
 
   system_prompt = f'the tools given here {tools}, tell me which tool to call for the prompt given below\n{user_prompt} if the tool in not in the json of tool, return the answer of the prompt given above, if the prompt is not relavent to the tools, answer the prompt given above, else return "call_tool-tool_name" without giving extra info just give the tool name without describing the reason to opt the tool and return the answer just in 1 line and the answer of the above prompt if the tool name is None'
 
